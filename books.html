@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FantaRealm</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="./Images/Logo.png" width="100">
+      <h1>FantaRealm</h1>
+    </div>
+    <nav class="top-navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="section">
+    <h2>Harry Potter and the Philosopher's Stone</h2>
+  </div>
+
+  <div class="container-1">
+    <div class="bookcover">
+      <img src="./Images/Harry Potter.jpg" width="170">
+      <p class="reference">*Image by Jonny Duddle</p>
+    </div>
+    <div class="quote">
+      <p>“It does not do to dwell on dreams and forget to live.”</p>
+    </div>
+    <div class="summary">
+      <p>Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!</p>
+    </div>
+  </div>
+
+  <div class="container-2">
+    <div class="author">
+      <h3>Author</h3>
+      <img src="./Images/J.K. Rowling.jpeg" width="200px">
+      <p class="reference">*Image from thegoblingarage</p>
+      <p>J.K. Rowling is a British author best known for the Harry Potter series, a global phenomenon that has sold millions of copies and inspired films, plays, and theme parks. Her magical world continues to captivate readers of all ages.</p>
+    </div>
+
+    <div class="ratings">
+      <h3>Ratings</h3>
+      <p1>⭐️ ⭐️ ⭐️ ⭐️ ⭐️</p1><br><br>
+      <p>Harry Potter and the Philosopher's Stone is pure magic in book form! J.K. Rowling creates a vibrant, immersive world that pulls you in from the very first page. The story is a delightful mix of wonder, humor, and heart, perfect for readers young and old. It’s fast-paced, incredibly engaging, and packed with creative details that spark the imagination. Rowling’s storytelling weaves themes of friendship and courage seamlessly, making it a feel-good adventure that stays with you. This book is a fantastic, enchanting read that I can’t recommend enough—dive in and start your Hogwarts journey!</p>
+    </div>
+
+    <div class="review">
+      <h3>Review</h3>
+      <textarea class="review-box" id="reviewInput" placeholder="Share your thoughts..."></textarea>
+    <br>
+      <button class="submit-btn" onclick="submitReview()">Submit</button>
+    </div>
+  </div>
+
+  <script>
+    function submitReview() {
+      const review = document.getElementById("reviewInput").value.trim();
+      if (review) {
+        alert("Thanks for your review! 💖");
+        document.getElementById("reviewInput").value = "";
+      } else {
+        alert("Please write something before submitting! ✍️");
+      }
+    }
+  </script>
+
+  <footer>
+    <img src="./Images/Logo.png" width="170">
+    <p>
+    <strong>Welcome to FantaRealm</strong> — your gateway to magical worlds! Discover the best fantasy books and movies, and share your own reviews. 🧙‍♂️📚✨
+    <br><br>
+      <strong>Connect with us:</strong>
+      Email: contact@fantarealm.com
+    <br><br>
+    </p>
+  </footer>
+
+
+</body>
+</html>

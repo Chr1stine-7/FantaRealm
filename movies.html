@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FantaRealm</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="./Images/Logo.png" width="100">
+      <h1>FantaRealm</h1>
+    </div>
+    <nav class="top-navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="section">
+    <h2>The Lord of the Rings:<br>The Fellowship of the Ring</h2>
+  </div>
+
+  <div class="container-3">
+    <div class="poster">
+      <img src="./Images/The Lord of the Rings.webp" width="170">
+      <p class="reference">*Image by Grzegorz Domaradzki</p>
+    </div>
+    <div class="quote">
+      <p>“All we have to decide is what to do with the time that is given us.”</p>
+    </div>
+    <div class="summary">
+      <p>An ancient Ring thought lost for centuries has been found, and through a strange twist of fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign.</p>
+    </div>
+  </div>
+
+  <div class="container-4">
+    <div class="director">
+      <h3>Director</h3>
+      <img src="./Images/Peter Jackson.webp" width="200px">
+      <p class="reference">*Image from The Beatles Wiki - Fandom</p>
+      <p>Peter Jackson is a New Zealand director best known for The Lord of the Rings trilogy. His epic adaptation of Tolkien’s work brought Middle-earth to life and became a landmark in fantasy cinema. The film’s success earned him global recognition and inspired fans around the world.</p>
+    </div>
+
+    <div class="ratings">
+      <h3>Ratings</h3>
+      <p2>⭐️ ⭐️ ⭐️ ⭐️</p2><br><br>
+      <p>The Lord of the Rings: The Fellowship of the Ring is a cinematic masterpiece that brings Tolkien’s world to life with breathtaking visuals and epic storytelling. Directed by Peter Jackson, this film is a stunning blend of adventure, heart, and spectacle. The lush landscapes of Middle-earth feel alive, and the score is absolutely unforgettable. It’s gripping, emotionally rich, and perfectly paced, keeping you hooked from start to finish. Ideal for fantasy fans and newcomers alike, this movie is a must-watch that sets the stage for an epic trilogy. Highly recommend diving into this timeless adventure!</p>
+    </div>
+
+    
+    <div class="review">
+      <h3>Review</h3>
+      <textarea class="review-box" id="reviewInput" placeholder="Share your thoughts..."></textarea>
+    <br>
+      <button class="submit-btn" onclick="submitReview()">Submit</button>
+    </div>
+  </div>
+
+  <script>
+    function submitReview() {
+      const review = document.getElementById("reviewInput").value.trim();
+      if (review) {
+        alert("Thanks for your review! 💖");
+        document.getElementById("reviewInput").value = "";
+      } else {
+        alert("Please write something before submitting! ✍️");
+      }
+    }
+  </script>
+
+
+  <footer>
+    <img src="./Images/Logo.png" width="170">
+    <p>
+    <strong>Welcome to FantaRealm</strong> — your gateway to magical worlds! Discover the best fantasy books and movies, and share your own reviews. 🧙‍♂️📚✨
+    <br><br>
+      <strong>Connect with us:</strong>
+      Email: contact@fantarealm.com
+    <br><br>
+    </p>
+  </footer>
+
+
+</body>
+</html>
